@@ -17,6 +17,7 @@ float-для позиционирования слева, нижн. границ
 #navigat{
     display: block;
     width: 100%;
+    background: #222;
     text-align: center;
     margin-bottom: 0;
     float: left;
@@ -26,11 +27,12 @@ float-для позиционирования слева, нижн. границ
 /*обращаемся к кажд. элем. списка: ширина, режим отображ. в одну строку, фон, граница-толщ, сплошность, цвет
 внутр. отступ 20 по верт, 20 пкс по гориз. вид курсора при навед*/
 #navigat a{
-    width: 21.89%;
+    /*width: 21.89%;*/
     display: inline;
     color: white;
     background: #222;
     padding: 10px 20px;
+    margin-left: 200px;
     cursor: pointer;
     
     float: left;
@@ -90,15 +92,18 @@ z-index: 1-номер слоя. Обьект, номер слоя кот. бол
     display: block;
     font-size: 1.2em;
     text-indent: 30px;
-    
+}
+#main img{
+    width: 800px;
 }
 
+/*Класс img_left- Рисунки в основной части, обтекаемые текстом, ширина, обтекание, отступ*/
 .img_left{
     width: 250px;
     float: left;
     margin: 10px;
 }
-
+/*Класс img_right- Рисунки в основной части, обтекаемые текстом, ширина, обтекание, отступ*/
 .img_right{
     width: 250px;
     float: right;
@@ -127,7 +132,7 @@ float-для позиционирования слева*/
 
 /*Боковая часть(картинки):ширина*/
 #aside img{
-    width: 245px;
+    width: 240px;
     padding: 5px;
     border: 2px solid silver;
 }
