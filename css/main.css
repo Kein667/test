@@ -1,0 +1,162 @@
+/*тестовый сайт*/
+
+/*Убираем отступы для всех элементов страницы*/*{
+    margin: 0;
+    padding: 0;
+}
+/*Высота осн. блока страницы 1400 пикселей, фоновое изобр,откл. повтор фона, растягив на экран*/
+body{
+    height: 2100px;
+    background-image: url("../img/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*ВЕРХНЯЯ НАВИГАЦ. ПАНЕЛЬ:режим отобр- блочный, ширина, позиц. текста по центру, нулевой отступ снизу
+float-для позиционирования слева, нижн. граница, ее тлщина, сплошность, цвет*/
+#navigat{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    float: left;
+    border-bottom: 2px solid silver;
+}
+
+/*обращаемся к кажд. элем. списка: ширина, режим отображ. в одну строку, фон, граница-толщ, сплошность, цвет
+внутр. отступ 20 по верт, 20 пкс по гориз. вид курсора при навед*/
+#navigat a{
+    width: 21.89%;
+    display: inline;
+    color: white;
+    background: #222;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+    float: left;
+}
+/*псевдокласс :hover срабатывает, когда пользователь наводит на элемент мышью, но не обязательно активирует его.
+уст. цвет, цвет фона, закругление границ*/
+#navigat a:hover{
+    color: red;
+    background: #333;
+    border: 1px solid silver;
+    border-radius: 5px;
+    border-color: green;
+}
+/*Шапка: Ширина, высота, позиц. текста, толщина нижн.границы, ее сплошность и цвет, фон, цвет текста, 
+line-height-высота строки для позиционирования текста шапки по высоте(если равна высоте шапки, то будет по середине)
+отступ снизу
+float-left для позиционирования слева*/
+#header, #footer{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: 3em;
+    border: 2px solid silver;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    line-height: 80px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+
+/*Основная часть:ширина, внеш. отступ слева, цвет фона, толщина и цвет гр-цы, отступы по верт. и гориз.
+float-для позиционирования слева
+position-позиционирование блока. static-по умолч., relative-относительно пред.полож. 
+z-index: 1-номер слоя. Обьект, номер слоя кот. больше, будет расп. поверх того обьекта, у кот. номер слоя меньше*/
+#main{
+    width: 60%;
+    
+    margin-left: 5%;
+    background: #444;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 20px 2.5%;
+    float: left;
+}
+/*Основная часть(заголовок):цвет текста, отображ-блочное,позиционирование текста по центру*/
+#main b{
+    color: lightslategrey;
+    display: block;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+/*Основная часть(текст):блочное отображение*/
+#main a{
+    display: block;
+    font-size: 1.2em;
+    text-indent: 30px;
+    
+}
+
+.img_left{
+    width: 250px;
+    float: left;
+    margin: 10px;
+}
+
+.img_right{
+    width: 250px;
+    float: right;
+    margin: 10px;
+}
+/*Боковая часть: ширина, отступ слева, цвет фона, граница:толщина, сплошность, цвет, радиус закр. 
+float-для позиционирования слева*/
+#aside{
+    width: 20%;
+    margin-left: 5%;
+    background: #333;
+    border: 1px solid silver;
+    border-radius: 5px;
+
+    float: left;
+}
+
+/*Боковая часть(заголовок):цвет текста, отображение, позиционирование текста по центру*/
+#aside b{
+    color: lightslategrey;
+    display: block;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/*Боковая часть(картинки):ширина*/
+#aside img{
+    width: 245px;
+    padding: 5px;
+    border: 2px solid silver;
+}
+
+/*Боковая часть(текст):цвет, блочное отображение, внутр. отступ*/
+#aside a{
+    color: wheat;
+    display: block;
+    padding: 5px;
+}
+
+/*Боковая часть(текст): псевдокласс hover, сраб. при наведении:цвет, блочное отображение, внутр. отступ*/
+#aside a:hover{
+    color: rgb(14, 218, 99);
+    display: block;
+    padding: 5px;
+    border: 2px solid green;
+}
+
+/*Футер: размер шрифта, его стиль прописан вместе с шапкой ранее, но т.к. отступ футеру снизу не нужен, а нужен сверху- то пропис это
+и аналогично граница футеру нижняя не нужна, а нужна верхняя(пропис аналогично нижн. гр-цы. для шапки)
+float-для позиционирования слева*/
+#footer {
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-top: 20px;
+    
+}
+
+#footer a{
+    margin-left: 20px;
+}
