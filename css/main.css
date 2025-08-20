@@ -135,7 +135,7 @@ float-для позиционирования слева*/
 
 /*Боковая часть(картинки):ширина*/
 #aside img{
-    width: 240px;
+    width: 235px;
     padding: 5px;
     border: 2px solid silver;
 }
@@ -167,4 +167,5 @@ float-для позиционирования слева*/
 
 #footer a{
     margin-left: 20px;
+
 }
